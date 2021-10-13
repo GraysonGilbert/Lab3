@@ -31,7 +31,7 @@ class Joystick:
   def __init__(button,chn):
     button.chn = PCF8591(chn)
 
-  def getX(chn):
+  def getX(button, chn):
    return button.chn.read(0)
 
   def getY(button, chn):
