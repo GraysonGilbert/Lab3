@@ -32,10 +32,11 @@ class Joystick:
     button.chn = PCF8591(chn)
 
   def getX(button):
-   return button.chn.read(0)
+   return button.chn.read(1)
 
   def getY(button):
-    return button.chn.read(1)
+    return button.chn.read(0)
+  
 
 
 while True:
