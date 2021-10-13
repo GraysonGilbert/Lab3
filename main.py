@@ -31,10 +31,10 @@ class Joystick:
   def __init__(button,chn):
     button.chn = PCF8591(chn)
 
-  def getX(button, chn):
+  def getX(button):
    return button.chn.read(0)
 
-  def getY(button, chn):
+  def getY(button):
     return button.chn.read(1)
 
 
